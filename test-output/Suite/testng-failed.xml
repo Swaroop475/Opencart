@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test_03(failed)">
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -12,9 +12,9 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verify_loginDDT"/>
+          <include name="verify_loginDDT" invocation-numbers="2 3 4 5"/>
         </methods>
       </class> <!-- testCase.TC_003_LoginDDT -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test_03(failed) -->
 </suite> <!-- Failed suite [Suite] -->
